@@ -35,5 +35,3 @@ Each player has a final score of the sum of each color score, minus any penaltie
 ### End of Play
 
 The game ends and scores are tallied when two colors have been locked.
-
-![image](https://github.com/user-attachments/assets/55a445ce-d479-44e1-81e8-7f95e02b7874)
