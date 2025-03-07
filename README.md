@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/11d29293-4e57-4e6c-bdcc-ed2b30b91039)# Quixx
+# Quixx
 THIS PROJECT IS A WORK IN PROGRESS
 
 Why am I undertaking this project? My girlfriend's family treasures this game, and I think, besides one lucky win, I can never quite figure out what the best strategy is. Time to use math to get that win % up.
