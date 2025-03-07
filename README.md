@@ -6,17 +6,13 @@ Why am I undertaking this project? My girlfriend's family treasures this game, a
 ## Quixx Rules
 This personal project analyzes the best strategies for **Quixx**, a dice game where you try to maximize your score before the game abruptly ends. The suggested number of players is 2-5. Each player is given a card that looks something like this:
 
-**Red:**  
-`2 3 4 5 6 7 8 9 10 11 | 12 🔒`
+**Red:**  `2 3 4 5 6 7 8 9 10 11 | 12 🔒`
 
-**Yellow:**  
-`2 3 4 5 6 7 8 9 10 11 | 12 🔒`
+**Yellow:**  `2 3 4 5 6 7 8 9 10 11 | 12 🔒`
 
-**Green:**  
-`12 11 10 9 8 7 6 5 4 3 | 2 🔒`
+**Green:**  `12 11 10 9 8 7 6 5 4 3 | 2 🔒`
 
-**Blue:**  
-`12 11 10 9 8 7 6 5 4 3 | 2 🔒`
+**Blue:**  `12 11 10 9 8 7 6 5 4 3 | 2 🔒`
 
 ### Scoring System
 The scoring table is represented as follows:
