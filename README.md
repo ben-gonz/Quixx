@@ -31,3 +31,7 @@ Players receive points in each color category based on the amount of numbers cro
 
 Each player has a final score of the sum of each color score, minus any penalties. 
 `Red Total + Yellow Total + Green Total + Blue Total - [ ] = [Total]`
+
+### End of Play
+
+The game ends and scores are tallied when two colors have been locked.
