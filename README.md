@@ -7,10 +7,13 @@ Why am I undertaking this project? My girlfriend's family treasures this game, a
 ## Quixx Rules
 This personal project analyzes the best strategies for **Quixx**, a dice game where you try to maximize your score before the game abruptly ends. The suggested number of players is 2-5. There are six dice in play, two white dice, and a red, yellow, green, and blue die (W1, W2, R, Y, G, B). Each player is given a card that looks something like this:
 
-| Red    | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 🔒 |
-| Yellow | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 🔒 |
-| Green  | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 🔒 |
-| Blue   | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 🔒 |
+|     | 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 | 11 | 12 | 🔒 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Red    | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 | 11 | 12 |     | 🔒 |
+| Yellow | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 | 11 | 12 |     | 🔒 |
+| Green  | 12 | 11 | 10 | 9  | 8  | 7  | 6  | 5  | 4  | 3  | 2  |     | 🔒 |
+| Blue   | 12 | 11 | 10 | 9  | 8  | 7  | 6  | 5  | 4  | 3  | 2  |     | 🔒 |
+
 
 The main goal of this analysis and program is to answer the question: Which square should I mark given a specific dice throw, which has multiple combinations possible?
 
