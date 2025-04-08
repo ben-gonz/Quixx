@@ -22,7 +22,6 @@ Everybody:
 | W1 + W2 |
 
 Roller:
-|     |     |
 | --- | --- |
 | R + W1 | R + W2 |
 | Y + W1 | Y + W2 |
