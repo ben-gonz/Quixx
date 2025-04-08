@@ -7,6 +7,7 @@ Why am I undertaking this project? My girlfriend's family treasures this game, a
 ## Quixx Rules
 This personal project analyzes the best strategies for **Quixx**, a dice game where you try to maximize your score before the game abruptly ends. The suggested number of players is 2-5. There are six dice in play, two white dice, and a red, yellow, green, and blue die (W1, W2, R, Y, G, B). Each player is given a card that looks something like this:
 
+|     |     |     |     |     |     |     |     |     |     |     |     |     |     |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Red    | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 | 11 | 12 |     | 🔒 |
 | Yellow | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 | 11 | 12 |     | 🔒 |
@@ -21,11 +22,13 @@ Everybody:
 | W1 + W2 |
 
 Roller:
+|     |     |
 | --- | --- |
 | R + W1 | R + W2 |
 | Y + W1 | Y + W2 |
 | G + W1 | G + W2 |
 | B + W1 | B + W2 |
+
 
 The player who rolls the dice may use the sum of the two white dice to cross a number off their card. Then, the player may use either of the white dice 🎲🎲 in combination with one of the colored die 🎲 to cross off a second square. If the player elects to use the colored die first, they may not use the two white dice in the same turn. Any of the other players can use the white dice on any turn. You can only use the colored die + one white die on your turn. Once a number in a row has been crossed off, you may not cross off any of the numbers to its left. Once you skip a square, it is dead So, the optimal strategy with Red and Yellow is to start with low numbers, and for Green and Blue start with high numbers. Once a player has marked five numbers in any row, that color is "lockable." Once it is lockable, that player may "lock" the color row on subsequent dice throws (by rolling a 2 or 12, depending on the color) 🔒. When the row is locked, the player may also take additional points by crossing off the lock. Other players may take the 2 or 12 if the sum is rolled on the white dice. 
 
