@@ -9,10 +9,10 @@ This personal project analyzes the best strategies for **Quixx**, a dice game wh
 
 |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Red    | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 | 11 | 12 |     | 🔒 |
-| Yellow | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 | 11 | 12 |     | 🔒 |
-| Green  | 12 | 11 | 10 | 9  | 8  | 7  | 6  | 5  | 4  | 3  | 2  |     | 🔒 |
-| Blue   | 12 | 11 | 10 | 9  | 8  | 7  | 6  | 5  | 4  | 3  | 2  |     | 🔒 |
+| Red    | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 | 11 |     | 12 | 🔒 |
+| Yellow | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 | 11 |     | 12 | 🔒 |
+| Green  | 12 | 11 | 10 | 9  | 8  | 7  | 6  | 5  | 4  | 3  |     | 2  | 🔒 |
+| Blue   | 12 | 11 | 10 | 9  | 8  | 7  | 6  | 5  | 4  | 3  |     | 2  | 🔒 |
 
 
 The main goal of this analysis and program is to answer the question: Which square should I mark given a specific dice throw, which has multiple combinations possible?
