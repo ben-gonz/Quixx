@@ -1,6 +1,6 @@
 ![quixx](https://github.com/user-attachments/assets/e0d8c9f6-bba4-45aa-9e51-dcd5cac358f8)
 # Quixx!
-I undertaking this project partially to humor myself. My fiance's family loves this game, and I think (besides one lucky win) I can never quite figure out what the best strategy is. Time to use math!
+This project is a work in progress. I undertaking this project partially to humor myself. My fiance's family loves this game, and I think (besides one lucky win) I can never quite figure out what the best strategy is. Time to use math!
 
 ## Quixx Rules
 This personal project analyzes the best strategies for **Quixx**, a dice game where you try to maximize your score before the game abruptly ends. The suggested number of players is 2-5. There are six dice in play, two white dice, and a red, yellow, green, and blue die (W1, W2, R, Y, G, B). Each player is given a card that looks something like this:
