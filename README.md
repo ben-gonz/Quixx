@@ -1,9 +1,9 @@
 ![quixx](https://github.com/user-attachments/assets/e0d8c9f6-bba4-45aa-9e51-dcd5cac358f8)
-# Quixx!
-This project is a work in progress. I undertaking this project partially to humor myself. My wife loves this game, and I think (besides one lucky win) I can never quite figure out what the best strategy is. Time to use math!
+# Quixx Reinforcement Learning
+A custom Gymnasium environment for Quixx (the popular 2–5 player dice game) with three reinforcement learning agents: tabular **Q-Learning**, **Monte Carlo Tree Search (MCTS)**, and **Deep Q-Network (DQN)**. My wife loves this game, and I think (besides one lucky win) I can never quite figure out what the best strategy is. This analysis uses some reinforcement learning and deep learning methods to see if a model can outperform randomness.
 
 ## Quixx Rules
-This personal project analyzes the best strategies for **Quixx**, a dice game where you try to maximize your score before the game abruptly ends. The suggested number of players is 2-5. There are six dice in play, two white dice, and a red, yellow, green, and blue die (W1, W2, R, Y, G, B). Each player is given a card that looks something like this:
+Quixx is a dice game where you try to maximize your score before the game abruptly ends. The suggested number of players is 2-5. There are six dice in play, two white dice, and a red, yellow, green, and blue die (W1, W2, R, Y, G, B). Each player is given a card that looks something like this:
 
 |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -12,38 +12,10 @@ This personal project analyzes the best strategies for **Quixx**, a dice game wh
 | Green  | 12 | 11 | 10 | 9  | 8  | 7  | 6  | 5  | 4  | 3  |     | 2  | 🔒 |
 | Blue   | 12 | 11 | 10 | 9  | 8  | 7  | 6  | 5  | 4  | 3  |     | 2  | 🔒 |
 
+Quixx is a stochastic, sequential decision-making game with a massive state space. This project implements a fully functional environment (`quixx_env.py`) and compares three classic RL approaches to discover better strategies than typical human heuristics.
 
-The main goal of this analysis and program is to answer the question: Which square should I mark given a specific dice throw, which has multiple combinations possible?
-
-Everybody:
-| --- |
-| W1 + W2 |
-
-| Roller: |     |
-| --- | --- |
-| R + W1 | R + W2 |
-| Y + W1 | Y + W2 |
-| G + W1 | G + W2 |
-| B + W1 | B + W2 |
-
-
-The player who rolls the dice may use the sum of the two white dice to cross a number off their card. Then, the player may use either of the white dice 🎲🎲 in combination with one of the colored die 🎲 to cross off a second square. If the player elects to use the colored die first, they may not use the two white dice in the same turn. Any of the other players can use the white dice on any turn. You can only use the colored die + one white die on your turn. Once a number in a row has been crossed off, you may not cross off any of the numbers to its left. Once you skip a square, it is dead So, the optimal strategy with Red and Yellow is to start with low numbers, and for Green and Blue start with high numbers. Once a player has marked five numbers in any row, that color is "lockable." Once it is lockable, that player may "lock" the color row on subsequent dice throws (by rolling a 2 or 12, depending on the color) 🔒. When the row is locked, the player may also take additional points by crossing off the lock. Other players may take the 2 or 12 if the sum is rolled on the white dice. 
-
-You can elect to receive a penalty if it is your turn and you cannot play or choose not to mark any number. Each player can receive a maximum of four penalties, with each penalty being worth -5 points. The rest of the scoring is as follows.
-
-### Scoring System
-
-| X   | 1x | 2x | 3x | 4x | 5x | 6x | 7x | 8x | 9x | 10x | 11x | 12x |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Points | 1 | 3 | 6 | 10 | 15 | 21 | 28 | 36 | 45 | 55 | 66 | 78 |
-
-Players receive points in each color category based on the amount of numbers crossed off in that cateogry
-
-### Total Scores
-
-Each player has a final score of the sum of each color score, minus any penalties. 
-R + Y + G + B - Penalties = T
-
-### End of Play
-
-The game ends and scores are tallied when two colors have been locked.
+## Files
+- `quixx_game.py` — Core game logic and scoring
+- `quixx_env.py`  — Gymnasium environment wrapper
+- `Quixx Reinforcement Learning Notebook.ipynb` — Full training, evaluation, and analysis notebook
+- `Quixx Report` — Six Pager summarizing the methodologies and results
